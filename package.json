@@ -9,8 +9,7 @@
   "peerDependencies": {
     "eslint": ">=5.13.0",
     "@typescript-eslint/eslint-plugin": ">=1.3.0",
-    "eslint-plugin-import": ">=2.16.0",
-    "eslint-plugin-prefer-arrow": ">=1.1.4"
+    "eslint-plugin-import": ">=2.16.0"
   },
   "repository": {
     "type": "git",

@@ -8,7 +8,7 @@ ESLint config which imitate TSLint
 
 Npm
 ```bash
-npm install --save-dev eslint-config-tslint eslint @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-prefer-arrow
+npm install --save-dev eslint-config-tslint eslint @typescript-eslint/eslint-plugin eslint-plugin-import
 ```
 
 ## Usage

@@ -60,7 +60,6 @@ module.exports = {
     // "comment-format": {
     //   options: ["check-space"]
     // },
-    "capitalized-comments": "error",
     "spaced-comment": "error",
 
     // curly: true,
@@ -199,7 +198,7 @@ module.exports = {
     "no-unsafe-finally": "error",
 
     // "no-unused-expression": true,
-    "no-unused-expressions": "error",
+    "no-unused-expressions": ["error", { allowShortCircuit: true }],
 
     // "no-use-before-declare": false, // disabled because it is very heavy performance-wise and not that useful
     "@typescript-eslint/no-use-before-define": "off",
@@ -236,7 +235,7 @@ module.exports = {
     // "only-arrow-functions": {
     //   options: ["allow-declarations", "allow-named-functions"]
     // },
-    "prefer-arrow/prefer-arrow-functions": "error", // TODO: Probably not equivalent to TSLint's `only-arrow-functions`
+    // "prefer-arrow/prefer-arrow-functions": "error", // TODO: Probably not equivalent to TSLint's `only-arrow-functions`
 
     // "ordered-imports": {
     //   options: {
