@@ -52,7 +52,7 @@ module.exports = {
     ],
 
     // "callable-types": true,
-    "@typescript-eslint/prefer-function-type": "error",
+    // "@typescript-eslint/prefer-function-type": "error", // TODO: Uncomment this once @typescript-eslint/eslint-plugin release a new version with this rule.
 
     // "class-name": true,
     "@typescript-eslint/class-name-casing": "error",
