@@ -2,6 +2,8 @@
 
 module.exports = {
   extends: "tslint/recommended",
+  plugins: ["@typescript-eslint", "import"],
+  parser: "@typescript-eslint/parser",
   rules: {
     // align: {
     //   options: ["parameters", "statements", "members"],
