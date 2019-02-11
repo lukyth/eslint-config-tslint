@@ -199,7 +199,7 @@ module.exports = {
     "no-unsafe-finally": "error",
 
     // "no-unused-expression": true,
-    "no-unused-expression": "error",
+    "no-unused-expressions": "error",
 
     // "no-use-before-declare": false, // disabled because it is very heavy performance-wise and not that useful
     "@typescript-eslint/no-use-before-define": "off",
@@ -231,7 +231,7 @@ module.exports = {
     // Doesn't has any ESLint equivalent rule.
 
     // "one-variable-per-declaration": { options: ["ignore-for-loop"] },
-    "one-var": "error",
+    "one-var": ["error", "never"],
 
     // "only-arrow-functions": {
     //   options: ["allow-declarations", "allow-named-functions"]
@@ -337,6 +337,7 @@ module.exports = {
       { allow: ["^([A-Z0-9]|[A-Z0-9]+[a-z0-9]+(?:[A-Z0-9]+[a-z0-9]*)*)$"] } // PascalCase RegEx ref: https://github.com/yannickcr/eslint-plugin-react/blob/master/lib/rules/jsx-pascal-case.js#L16
     ],
     "id-blacklist": [
+      // Keywords from https://github.com/palantir/tslint/blob/master/src/rules/variableNameRule.ts#L26
       "error",
       "any",
       "Number",
@@ -345,8 +346,8 @@ module.exports = {
       "string",
       "Boolean",
       "boolean",
-      "Undefined",
-      "undefined"
+      "Undefined"
+      // "undefined" // Can assign `undefined` to a variable.
     ]
 
     // whitespace: {
