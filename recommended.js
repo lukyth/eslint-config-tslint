@@ -92,7 +92,7 @@ module.exports = {
     "@typescript-eslint/prefer-interface": "error",
 
     // "jsdoc-format": true,
-    "valid-jsdoc": "error", // TODO: Use eslint-plugin-jsdoc instead.
+    // "valid-jsdoc": "error", // TODO: Find a more equivalent rule.
 
     // "label-position": true,
     "no-unused-labels": "error",
@@ -111,7 +111,27 @@ module.exports = {
     //     order: "statics-first"
     //   }
     // },
-    "@typescript-eslint/member-ordering": "error", // TODO: Make sure this has statics-first behavior
+    '@typescript-eslint/member-ordering': [
+      'error',
+      {
+        default: [
+          // Order from https://github.com/palantir/tslint/blob/master/src/rules/memberOrderingRule.ts#L84
+          'public-static-field',
+          'public-static-method',
+          'protected-static-field',
+          'protected-static-method',
+          'private-static-field',
+          'private-static-method',
+          'public-instance-field',
+          'protected-instance-field',
+          'private-instance-field',
+          'constructor',
+          'public-instance-method',
+          'protected-instance-method',
+          'private-instance-method',
+        ],
+      },
+    ],
 
     // "new-parens": true,
     "new-parens": "error",
@@ -235,7 +255,7 @@ module.exports = {
     // "only-arrow-functions": {
     //   options: ["allow-declarations", "allow-named-functions"]
     // },
-    // "prefer-arrow/prefer-arrow-functions": "error", // TODO: Probably not equivalent to TSLint's `only-arrow-functions`
+    // "prefer-arrow/prefer-arrow-functions": "error", // TODO: Find a more equivalent rule.
 
     // "ordered-imports": {
     //   options: {

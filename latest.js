@@ -58,7 +58,7 @@ module.exports = {
     "no-sequences": "error",
     
     // "jsdoc-format": { options: "check-multiline-start" },
-    "valid-jsdoc": "error", // TODO: Use eslint-plugin-jsdoc instead
+    // "valid-jsdoc": "error", // TODO: Find a more equivalent rule.
 
     // "no-duplicate-switch-case": true,
     "no-duplicate-case": "error",
