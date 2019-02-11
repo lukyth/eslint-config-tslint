@@ -1,7 +1,7 @@
 // Based on https://github.com/palantir/tslint/blob/master/src/configs/recommended.ts
 
 module.exports = {
-  plugins: ["@typescript-eslint", "import"],
+  plugins: ["@typescript-eslint", "import", "prefer-arrow"],
   parser: "@typescript-eslint/parser",
   rules: {
     // "adjacent-overload-signatures": true,
