@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tslint",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "ESLint config which imitate TSLint",
   "main": "index.js",
   "scripts": {
