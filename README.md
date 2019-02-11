@@ -2,11 +2,8 @@
 
 ESLint config which imitate TSLint
 
-## 🚧🚧🚧 Under construction 🚧🚧🚧
-
 ## Install
 
-Npm
 ```bash
 npm install --save-dev eslint-config-tslint eslint @typescript-eslint/eslint-plugin eslint-plugin-import
 ```
@@ -15,8 +12,18 @@ npm install --save-dev eslint-config-tslint eslint @typescript-eslint/eslint-plu
 
 Add this to your `.eslintrc` file:
 
+If you're using TSLint's `tslint:recommended` before:
+
 ```json
 {
   "extends": ["tslint/recommended"]
+}
+```
+
+If you're using TSLint's `tslint:latest` before:
+
+```json
+{
+  "extends": ["tslint/latest"]
 }
 ```
