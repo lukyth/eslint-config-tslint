@@ -111,26 +111,26 @@ module.exports = {
     //     order: "statics-first"
     //   }
     // },
-    '@typescript-eslint/member-ordering': [
-      'error',
+    "@typescript-eslint/member-ordering": [
+      "error",
       {
         default: [
           // Order from https://github.com/palantir/tslint/blob/master/src/rules/memberOrderingRule.ts#L84
-          'public-static-field',
-          'public-static-method',
-          'protected-static-field',
-          'protected-static-method',
-          'private-static-field',
-          'private-static-method',
-          'public-instance-field',
-          'protected-instance-field',
-          'private-instance-field',
-          'constructor',
-          'public-instance-method',
-          'protected-instance-method',
-          'private-instance-method',
-        ],
-      },
+          "public-static-field",
+          "public-static-method",
+          "protected-static-field",
+          "protected-static-method",
+          "private-static-field",
+          "private-static-method",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
     ],
 
     // "new-parens": true,
@@ -264,9 +264,9 @@ module.exports = {
     //     "named-imports-order": "case-insensitive"
     //   }
     // },
-    'sort-imports': 'off', // Make sure other import sorting rules are disbled and only `simple-import-sort/sort` is enabled.
-    'import/order': 'off',
-    'simple-import-sort/sort': 'error',
+    "sort-imports": "off", // Make sure other import sorting rules are disbled and only `simple-import-sort/sort` is enabled.
+    "import/order": "off",
+    "simple-import-sort/sort": "error",
 
     // "prefer-const": true,
     "prefer-const": "error",

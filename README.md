@@ -5,7 +5,7 @@ ESLint config which imitate TSLint
 ## Install
 
 ```bash
-npm install --save-dev eslint-config-tslint eslint @typescript-eslint/eslint-plugin eslint-plugin-import
+npm install --save-dev eslint-config-tslint eslint @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-simple-import-sort
 ```
 
 ## Usage

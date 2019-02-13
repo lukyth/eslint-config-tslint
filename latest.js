@@ -56,7 +56,7 @@ module.exports = {
 
     // "ban-comma-operator": true,
     "no-sequences": "error",
-    
+
     // "jsdoc-format": { options: "check-multiline-start" },
     // "valid-jsdoc": "error", // TODO: Find a more equivalent rule.
 
