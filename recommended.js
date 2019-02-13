@@ -1,7 +1,7 @@
 // Based on https://github.com/palantir/tslint/blob/master/src/configs/recommended.ts
 
 module.exports = {
-  plugins: ["@typescript-eslint", "import"],
+  plugins: ["@typescript-eslint", "import", "simple-import-sort"],
   parser: "@typescript-eslint/parser",
   rules: {
     // "adjacent-overload-signatures": true,
@@ -264,7 +264,9 @@ module.exports = {
     //     "named-imports-order": "case-insensitive"
     //   }
     // },
-    "import/order": "error", // TODO: Probably not equivalent to TSLint's `ordered-imports`
+    'sort-imports': 'off', // Make sure other import sorting rules are disbled and only `simple-import-sort/sort` is enabled.
+    'import/order': 'off',
+    'simple-import-sort/sort': 'error',
 
     // "prefer-const": true,
     "prefer-const": "error",
