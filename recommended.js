@@ -353,7 +353,7 @@ module.exports = {
     // "variable-name": {
     //   options: ["ban-keywords", "check-format", "allow-pascal-case"]
     // },
-    camelcase: [
+    '@typescript-eslint/camelcase': [
       "error",
       { allow: ["^([A-Z0-9]|[A-Z0-9]+[a-z0-9]+(?:[A-Z0-9]+[a-z0-9]*)*)$"] } // PascalCase RegEx ref: https://github.com/yannickcr/eslint-plugin-react/blob/master/lib/rules/jsx-pascal-case.js#L16
     ],
